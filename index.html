@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Banking</title>
+  </head>
+  <body>
+    <div class="filter">
+      <input type="number" id="input-from" placeholder="От" />
+      <input type="number" id="input-to" placeholder="До" />
+      <select id="currency">
+        <option value="USD" selected>Доллар</option>
+        <option value="SOM">Сом</option>
+        <option value="EURO">Евро</option>
+      </select>
+    </div>
+    <div class="actions">
+      <button id="add">Добавить счет</button>
+      <button id="check-billionaire">Есть ли миллиардер?</button>
+      <button id="check-millionaires">Все ли миллионеры?</button>
+      <button id="double">Удвоить баланс счетов</button>
+    </div>
+    <div class="message">
+      <h2>Сообщение:</h2>
+      <p class="message__content"></p>
+    </div>
+    <div class="account-list">
+      <!-- <div class="account">
+        <span class="account__id">1</span>
+        <b class="account__balance">100000 $</b>
+        <button class="account__btn">✖︎</button>
+      </div> -->
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>

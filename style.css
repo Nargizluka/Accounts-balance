@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.account__id {
+  color: grey;
+}
+.account__balance {
+  text-align: right;
+  width: 200px;
+  color: #6cbb80;
+  margin-right: 6px;
+  font-size: 18px;
+}
+
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  column-gap: 10px;
+  padding: 20px;
+  background-color: #6cbb80;
+}
+
+select, input, button {
+  border-radius: 16px;
+  border: 0;
+}
+
+.filter input {
+  height: 40px;
+  font-size: 18px;
+  padding-left: 12px;
+  box-shadow: 0 3px 6px rgba(0,0,0, .25)
+}
+
+input:focus, button:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #76dfff;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  column-gap: 10px;
+  padding: 20px;
+}
+
+.actions button {
+  height: 36px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.message {
+  text-align: center;
+}
+
+.message h2 {
+  font-size: 18px;
+  color: grey;
+}
+
+.message__content {
+  min-height: 20px;
+}
+
+.account-list {
+  display: grid;
+  row-gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.account {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  width: 280px;
+  background-color: #fff;
+  box-shadow: 0 3px 6px rgba(0,0,0, .25);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.account__btn {
+  cursor: pointer;
+}
